@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #d16b2b, #763004);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  transition: 0.4s;
+  margin: auto;
+  display: flex;
+  width: 80%;
+  box-shadow: 0 0 8px 9px #ef792f;
+  border-radius: 15px;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  width: 50%;
+  position: relative;
+  border-radius: 0 15px 15px 0;
+}
+.box .person {
+  position: absolute;
+  background: #fa9352;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 7px solid #fa9352;
+}
+.box .person i {
+  padding: 20px 20px 0;
+  font-size: 46px;
+  color: white;
+  opacity: 75%;
+}
+.box h1 {
+  font-size: 25px;
+  margin: 50px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+.box .account {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+.box .account .face {
+  background-color: #cccccc61;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 7px 3px #ddd;
+  cursor: pointer;
+}
+.account .face i {
+  margin-left: 14px;
+  font-size: 22px;
+  color: #407bff;
+}
+
+.box .account .face img {
+  width: 30px;
+  margin-right: 5px;
+}
+.box .account .face span {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+.content form input[type="email"] {
+  display: none;
+}
+form input:focus {
+  outline: none;
+}
+
+form button {
+  padding: 10px;
+  border-radius: 20px;
+  background: #fa9352;
+  color: white;
+  font-size: 17px;
+  margin: 0 auto 15px;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #fa9352;
+}
+.box .sign {
+  font-size: 13px;
+  display: block;
+  text-transform: capitalize;
+  width: fit-content;
+  margin: 20px auto;
+}
+.box .sign a {
+  text-decoration: none;
+  color: #fa9352;
+}
+.text {
+  width: 50%;
+  background-color: #fa9352;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px 0 0 15px;
+}
+.text img {
+  max-width: 74%;
+}
+
+.text .desc h2 {
+  color: white;
+  text-transform: capitalize;
+}
+.text .desc p {
+  color: white;
+  font-size: 14px;
+  text-transform: capitalize;
+  width: 60%;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+/* #################################  signup  ############################# */
+.signup {
+  flex-direction: row-reverse;
+}
+.signup .box {
+  border-radius: 15px 0 0 15px;
+}
+.signup .text {
+  border-radius: 0 15px 15px 0;
+}
+.signup form input[type="email"] {
+  display: block;
+}
+/* ################################################################### */
+@media (max-width: 855px) {
+  .text {
+    display: none;
+  }
+  .box {
+    width: 100%;
+    border-radius: 15px !important;
+  }
+}
